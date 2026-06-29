@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TourSafe Granada | Diagnóstico Inteligente en Turismo</title>
+  <style>
+    :root{
+      --bg:#0b1020;--panel:#121a33;--panel2:#18213f;--gold:#f2c14e;--blue:#5cc8ff;--green:#5ff0a0;--red:#ff6578;--orange:#ffb15c;--text:#f6f7fb;--muted:#b6c0d4;--line:rgba(255,255,255,.12);
+      --shadow:0 22px 70px rgba(0,0,0,.35);--radius:24px;
+    }
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at top left,#233a68 0,#0b1020 40%,#060914 100%);color:var(--text);line-height:1.55}a{color:inherit}.wrap{width:min(1180px,92vw);margin:auto}.hero{position:relative;overflow:hidden;padding:54px 0 34px;border-bottom:1px solid var(--line)}.hero:before{content:"";position:absolute;inset:-120px -80px auto auto;width:520px;height:520px;background:radial-gradient(circle,rgba(242,193,78,.35),transparent 60%);filter:blur(12px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:44px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}.logo{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--gold),#fff0a5);display:grid;place-items:center;color:#11172a;font-size:26px;box-shadow:0 12px 35px rgba(242,193,78,.25)}.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:rgba(255,255,255,.05);backdrop-filter:blur(10px);font-size:14px}.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}.kicker{color:var(--gold);font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:1.8px}.hero h1{font-size:clamp(38px,6vw,78px);line-height:.96;margin:14px 0 18px;letter-spacing:-2.5px}.hero p{font-size:18px;color:var(--muted);max-width:720px}.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}.btn{border:0;border-radius:16px;padding:14px 18px;font-weight:800;cursor:pointer;transition:.2s transform,.2s box-shadow;text-decoration:none}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,var(--gold),#ffeaa0);color:#11172a;box-shadow:0 16px 42px rgba(242,193,78,.25)}.secondary{background:rgba(255,255,255,.08);color:var(--text);border:1px solid var(--line)}.mock{background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));border:1px solid var(--line);border-radius:30px;padding:18px;box-shadow:var(--shadow)}.screen{border-radius:22px;background:#080d1c;padding:18px;min-height:390px;border:1px solid rgba(255,255,255,.08)}.map{height:170px;border-radius:18px;background:linear-gradient(135deg,#243b65,#11182c);position:relative;overflow:hidden;border:1px solid var(--line)}.map:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 48%,rgba(255,255,255,.08) 49%,transparent 51%),linear-gradient(0deg,transparent 48%,rgba(255,255,255,.08) 49%,transparent 51%);background-size:62px 62px}.pin{position:absolute;width:18px;height:18px;border-radius:50%;background:var(--red);box-shadow:0 0 0 8px rgba(255,101,120,.16)}.p1{left:28%;top:38%}.p2{left:62%;top:54%;background:var(--orange);box-shadow:0 0 0 8px rgba(255,177,92,.16)}.p3{left:78%;top:24%;background:var(--green);box-shadow:0 0 0 8px rgba(95,240,160,.16)}.metricGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.metric{padding:12px;border-radius:15px;background:rgba(255,255,255,.06);border:1px solid var(--line)}.metric b{display:block;font-size:22px}.metric span{font-size:12px;color:var(--muted)}section{padding:44px 0}.sectionTitle{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}.sectionTitle h2{font-size:clamp(28px,4vw,46px);line-height:1;margin:0;letter-spacing:-1.2px}.sectionTitle p{color:var(--muted);max-width:560px;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:rgba(255,255,255,.065);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 12px 40px rgba(0,0,0,.18)}.card h3{margin:0 0 9px;font-size:20px}.card p,.card li{color:var(--muted)}.icon{font-size:31px;margin-bottom:12px}.app{display:grid;grid-template-columns:.95fr 1.05fr;gap:18px;align-items:start}.form{background:rgba(255,255,255,.075);border:1px solid var(--line);border-radius:var(--radius);padding:22px}.field{margin-bottom:14px}.field label{display:block;font-weight:750;margin-bottom:7px}.field select,.field input{width:100%;border:1px solid var(--line);background:#0b1225;color:var(--text);border-radius:14px;padding:13px 12px;font-size:15px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:9px}.check{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:14px;padding:10px;background:rgba(255,255,255,.04);color:var(--muted)}.check input{width:auto}.result{background:linear-gradient(180deg,rgba(92,200,255,.1),rgba(255,255,255,.05));border:1px solid var(--line);border-radius:var(--radius);padding:22px;min-height:520px}.riskTop{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:18px}.score{width:122px;height:122px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--green) 0deg,var(--green) 120deg,rgba(255,255,255,.1) 120deg);font-size:34px;font-weight:900}.pill{display:inline-block;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);color:var(--muted);font-size:13px;margin:3px}.alert{border-left:4px solid var(--gold);padding:12px 14px;background:rgba(242,193,78,.09);border-radius:12px;margin:10px 0;color:#fff1bf}.high{border-left-color:var(--red);background:rgba(255,101,120,.1)}.medium{border-left-color:var(--orange);background:rgba(255,177,92,.1)}.low{border-left-color:var(--green);background:rgba(95,240,160,.1)}.promptBox{white-space:pre-wrap;background:#070b17;border:1px solid var(--line);border-radius:var(--radius);padding:22px;color:#dfe7fb;max-height:520px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13.5px}.footer{padding:34px 0 52px;color:var(--muted);border-top:1px solid var(--line)}@media(max-width:880px){.heroGrid,.app{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.metricGrid{grid-template-columns:1fr 1fr}.sectionTitle{display:block}.nav{align-items:flex-start;flex-direction:column}.screen{min-height:auto}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <nav class="nav">
+        <div class="brand"><div class="logo">⚜</div><div>TourSafe Granada<br><span style="color:var(--muted);font-weight:600;font-size:13px">Software de diagnóstico turístico</span></div></div>
+        <div class="badge">IA aplicada · Seguridad · Guía acompañante</div>
+      </nav>
+      <div class="heroGrid">
+        <div>
+          <div class="kicker">Prototipo HTML5 ejecutable</div>
+          <h1>Diagnóstico inteligente de riesgos para grupos turísticos.</h1>
+          <p>Herramienta conceptual basada en el documento guía para anticipar hurtos, estafas, accidentes, pérdida de turistas, objetos extraviados y malestar dentro del grupo durante visitas por Granada.</p>
+          <div class="cta"><a class="btn primary" href="#diagnostico">Ejecutar diagnóstico</a><a class="btn secondary" href="#prompt">Ver prompt maestro</a></div>
+        </div>
+        <aside class="mock" aria-label="Panel de control">
+          <div class="screen">
+            <div class="map"><span class="pin p1"></span><span class="pin p2"></span><span class="pin p3"></span></div>
+            <div class="metricGrid">
+              <div class="metric"><b>12</b><span>Turistas</span></div>
+              <div class="metric"><b>3</b><span>Alertas</span></div>
+              <div class="metric"><b>78%</b><span>Riesgo zona</span></div>
+            </div>
+            <div class="alert high">Alerta: zona concurrida con posible presencia de carteristas o estafadores.</div>
+            <div class="alert medium">Recomendación: reagrupar antes de cruzar y revisar pertenencias.</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap">
+      <div class="sectionTitle"><h2>Modelo de diagnóstico</h2><p>El sistema traduce las ideas del PDF en módulos de análisis para el guía acompañante.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">👁️</div><h3>Observación del entorno</h3><p>Analiza personas alrededor, densidad, zonas de obra, cruces, semáforos y vehículos.</p></article>
+        <article class="card"><div class="icon">🧳</div><h3>Control del grupo</h3><p>Comprueba si el grupo está completo, unido y si todos conservan móviles, bolsos, carteras y cámaras.</p></article>
+        <article class="card"><div class="icon">🛡️</div><h3>Plan de protección</h3><p>Genera causa probable, nivel de riesgo y solución recomendada para prevenir el incidente.</p></article>
+      </div>
+    </section>
+
+    <section id="diagnostico" class="wrap">
+      <div class="sectionTitle"><h2>Ejecutor de diagnóstico</h2><p>Simulación funcional: introduce la situación de una visita y genera una alerta turística.</p></div>
+      <div class="app">
+        <form class="form" onsubmit="event.preventDefault(); diagnosticar();">
+          <div class="field"><label>Zona turística</label><select id="zona"><option>Catedral de Granada</option><option>Alcaicería</option><option>Bosques de la Alhambra</option><option>Realejo</option><option>Plaza Nueva</option><option>Albaicín Bajo</option></select></div>
+          <div class="field"><label>Número de turistas</label><input id="personas" type="number" min="1" max="60" value="12" /></div>
+          <div class="field"><label>Densidad de personas alrededor</label><select id="densidad"><option value="1">Baja</option><option value="2" selected>Media</option><option value="3">Alta</option></select></div>
+          <div class="field"><label>Estado del grupo</label><select id="grupo"><option value="0">Completo y unido</option><option value="2">Algún turista se separa</option><option value="3">Falta una persona o no se localiza</option></select></div>
+          <div class="field"><label>Señales detectadas</label><div class="checks">
+            <label class="check"><input type="checkbox" value="18" class="risk"> Carteristas/rateros</label>
+            <label class="check"><input type="checkbox" value="15" class="risk"> Estafadores/trileros/tomillo</label>
+            <label class="check"><input type="checkbox" value="13" class="risk"> Cruce peligroso</label>
+            <label class="check"><input type="checkbox" value="12" class="risk"> Vehículos rápidos</label>
+            <label class="check"><input type="checkbox" value="10" class="risk"> Obras/obstáculos</label>
+            <label class="check"><input type="checkbox" value="14" class="risk"> Cliente se encuentra mal</label>
+            <label class="check"><input type="checkbox" value="11" class="risk"> Objeto extraviado</label>
+            <label class="check"><input type="checkbox" value="9" class="risk"> Mucha distracción</label>
+          </div></div>
+          <button class="btn primary" type="submit">Generar diagnóstico</button>
+        </form>
+        <aside class="result" id="salida">
+          <div class="riskTop"><div><span class="kicker">Resultado inicial</span><h3 style="font-size:30px;margin:6px 0">Pendiente de análisis</h3><p style="color:var(--muted)">Selecciona las variables y pulsa generar diagnóstico.</p></div><div class="score">0</div></div>
+          <p><span class="pill">Problema detectado</span><span class="pill">Causa probable</span><span class="pill">Solución recomendada</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="prompt" class="wrap">
+      <div class="sectionTitle"><h2>Prompt maestro usado</h2><p>Formato ROL + TAREA + CONTEXTO + FORMATO + CONDICIONES para desarrollar el software.</p></div>
+      <div class="promptBox">ROL
+Actúa como un equipo multidisciplinar formado por: arquitecto de software, experto en UX/UI para turismo, guía acompañante profesional en Granada, analista de riesgos, especialista en seguridad turística e ingeniero de IA aplicada a diagnóstico preventivo.
+
+TAREA
+Diseña y desarrolla un software web HTML5 llamado TourSafe Granada capaz de diagnosticar riesgos en visitas turísticas. El sistema debe identificar peligros antes de que ocurran, evaluar el estado del grupo, detectar pérdida de pertenencias, riesgo de hurtos, estafas, accidentes, separación de turistas y malestar físico o emocional de algún cliente.
+
+CONTEXTO
+El software se basa en una guía de diagnóstico turístico centrada en Granada. Debe contemplar zonas como Catedral, Alcaicería, Plaza Nueva, Realejo, Albaicín Bajo y bosques de la Alhambra. El guía debe estar atento al entorno, a los cruces, semáforos, obras, vehículos, carteristas, rateros, atracadores, estafadores, vendedoras de tomillo, trileros, objetos personales y conformidad del grupo.
+
+FORMATO
+Entrega un único archivo HTML5 con CSS3 y JavaScript integrados. Debe incluir landing visual, explicación del modelo de diagnóstico, formulario interactivo, cálculo de nivel de riesgo, panel de resultados, causa probable, problema detectado y solución recomendada.
+
+CONDICIONES
+El diseño debe ser moderno, responsive, profesional y útil para un futuro prototipo real. No debe promover vigilancia invasiva ni identificación biométrica real. La IA se presentará como sistema conceptual de apoyo al guía, no como sustituto del juicio humano. Debe priorizar prevención, protección, acompañamiento, seguridad peatonal y bienestar del turista.</div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap">TourSafe Granada · Prototipo conceptual educativo basado en diagnóstico preventivo de riesgos turísticos.</div></footer>
+
+  <script>
+    function diagnosticar(){
+      const zona=document.getElementById('zona').value;
+      const personas=parseInt(document.getElementById('personas').value||0,10);
+      const densidad=parseInt(document.getElementById('densidad').value,10);
+      const grupo=parseInt(document.getElementById('grupo').value,10);
+      let score=10 + densidad*12 + grupo*10 + Math.min(personas,40)*0.6;
+      const checks=[...document.querySelectorAll('.risk:checked')];
+      checks.forEach(c=>score+=parseInt(c.value,10));
+      score=Math.min(100,Math.round(score));
+      let nivel='BAJO', cls='low', color='var(--green)', causa='Situación controlada con observación preventiva.', problema='No hay indicios graves detectados.', solucion='Mantener al grupo unido, realizar recuentos periódicos y recordar que vigilen sus pertenencias.';
+      const labels=checks.map(c=>c.parentElement.textContent.trim()).join(', ');
+      if(score>=70){nivel='ALTO';cls='high';color='var(--red)';problema='Riesgo elevado de incidente durante la visita.';causa=labels||'Alta exposición del grupo en zona turística concurrida.';solucion='Detener la marcha, reagrupar, hacer recuento, evitar aglomeraciones, cruzar solo con el grupo completo y avisar a seguridad o emergencias si existe peligro real.';}
+      else if(score>=40){nivel='MEDIO';cls='medium';color='var(--orange)';problema='Riesgo moderado que requiere intervención temprana.';causa=labels||'Densidad media o grupo parcialmente disperso.';solucion='Reducir el ritmo, colocar al guía en punto visible, repetir instrucciones, revisar pertenencias y elegir un itinerario menos expuesto.';}
+      const deg=Math.round(score*3.6);
+      document.getElementById('salida').innerHTML=`<div class="riskTop"><div><span class="kicker">Diagnóstico generado</span><h3 style="font-size:30px;margin:6px 0">Riesgo ${nivel}</h3><p style="color:var(--muted)">Zona analizada: <b>${zona}</b> · Grupo: <b>${personas}</b> turistas</p></div><div class="score" style="background:conic-gradient(${color} 0deg,${color} ${deg}deg,rgba(255,255,255,.1) ${deg}deg)">${score}</div></div><div class="alert ${cls}"><b>Problema detectado:</b><br>${problema}</div><div class="alert"><b>Causa probable:</b><br>${causa}</div><div class="alert ${cls}"><b>Solución recomendada:</b><br>${solucion}</div><p><span class="pill">Control del grupo</span><span class="pill">Prevención de hurtos</span><span class="pill">Seguridad peatonal</span><span class="pill">Bienestar del turista</span></p>`;
+    }
+  </script>
+</body>
+</html>
